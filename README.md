@@ -1,6 +1,9 @@
 # njs_simple
 This project is in beta and NeptunJS too
 
+# Thanks to:
+NeptunJS Project
+
 # Initialize github roms
 To initialize roms that are in github like my patched roms is sample:
 
