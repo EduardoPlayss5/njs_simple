@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeptunJS Emulator</title>
+</head>
+<body>
+    <div id="emu"></div>
+
+    <script>
+        const params = new URL(window.location.href);
+        const rom = params.searchParams.get("rom");
+
+        console.log("Decoding rom: ", rom)
+
+        const decROM = decodeURIComponent(rom);
+
+        var NepPlayer = "#emu";     
+        var NepEmu = "n64";         
+        var NepZoom = "enable";     
+        var NepMaxWidth = "1100px"; 
+        var NepLang = "en";
+        var EmuN64air = true;  
+        var gameUrl = `${decROM}`;
+    </script>
+
+    <script src="https://mem.neptunjs.com/njs/njsLoader.js" type="text/javascript"></script>
+</body>
+</html>
