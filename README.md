@@ -18,7 +18,6 @@ in "<user_name>" is the rom provider, and in "<repository>" is the repo of rom.
 # Initialize your rom:
 to initialize your rom you will needed of:
 http-server program
-rom
 
 in your rom folder start the http-server.
 open the ip that http-server started.
