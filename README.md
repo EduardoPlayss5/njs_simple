@@ -6,7 +6,7 @@ To initialize roms that are in github like my patched roms is sample:
 
 For me:
 on ROM url input type:
-<a href="about:blank">https://raw.githubusercontent.com/EduardoPlayss5/njs_simple/main/<rom_name>.zip</a>
+<a href="about:blank">"https://raw.githubusercontent.com/EduardoPlayss5/njs_simple/main/<rom_name>.zip"</a>
 in "<rom_name>" type the name of your rom in my repo.
 
 For others:
