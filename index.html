@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N64 Rom URL</title>
+</head>
+<body>
+    <div class="inputdata">
+        <label for="romurl">ROM .zip Link: </label>
+        <input id="romurl" placeholder="ROM Link" required/>
+        <br>
+        <button id="run-btn">Start Emulation</button>
+    </div>
+</body>
+
+<script>
+    const btn = document.getElementById("run-btn");
+
+    btn.addEventListener("click", () => {
+        const romurl1 = document.getElementById("romurl");
+        const romurl2 = romurl1.value;
+        const encROM = encodeURIComponent(romurl2);
+
+        if (romurl2 !== null) {
+            window.location.href = `index.html?rom=${encROM}`;
+        } else {
+            alert("ROM Input is Blank and is required to boot emulator.");
+        }
+    });
+</script>
+
+</html>
